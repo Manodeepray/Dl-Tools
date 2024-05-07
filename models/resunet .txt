@@ -1,0 +1,20 @@
+resunet 
+
+In this code:
+
+res_block: This function defines a basic residual block, similar to what's used in ResNet.
+ResUNet: This function defines the ResUNet architecture, which combines the contracting path of U-Net with the residual blocks from ResNet in the expanding path. It consists of encoder and decoder parts with skip connections between corresponding layers in the contracting and 
+
+
+resnet 
+
+in both ResNet-18 and ResNet-34, the basic building block is the same. This building block is called a residual block, which consists of a series of convolutional layers with shortcut connections.
+
+The resnet_block function defined in the code is used to create this residual block. It takes input features, applies convolutional layers, adds a shortcut connection (if conv_shortcut is set to True), and then merges the output of the convolutional layers with the shortcut connection using element-wise addition. Finally, a ReLU activation function is applied to the merged output.
+
+In both ResNet-18 and ResNet-34, these residual blocks are stacked together to form the complete architecture. The main difference between ResNet-18 and ResNet-34 lies in the number of residual blocks and consequently the depth of the network.
+
+
+yoloV8
+
+This is a simplified version of YOLOv8 architecture implemented using TensorFlow's Keras API. You would need to define the complete architecture according to the YOLOv8 specifications and customize it according to your specific requirements. Additionally, you would replace 'X_train' and 'y_train' with your actual training data and labels, respectively. Finally, replace 'image' with your input image when performing inference.
